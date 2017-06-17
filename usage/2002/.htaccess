@@ -1,0 +1,4 @@
+php_value include_path .:/web/users/dag.wieers.com:
+php_value auto_prepend_file cfg_head.inc.php
+php_value auto_append_file cfg_foot.inc.php
+AddType application/x-httpd-php .html

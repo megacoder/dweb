@@ -1,0 +1,337 @@
+A {
+	text-decoration: none;
+	border: 1px none #ffffff;
+/*	padding-left: 0;*/
+}
+
+A:link, A:visited {
+	border: 1px solid #f0f0ff;
+/*	background-color: #f8f8ff; */
+	background-color: transparent;
+	color: #666699;
+}
+
+A:hover {
+	background-color: #f0f0f8;
+	color: #333366;
+	border: 1px solid #d0d0f8;
+}
+
+/* MENU */
+.menu {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 8pt;
+	white-space: nowrap;
+}
+
+.menu .active, A.active, A:active {
+	background-color: #fff0f0;
+	cursor: pointer;
+	color: maroon;
+	border: 1px dotted #ffd0d0;
+}
+
+.menu .activelink, A.activelink {
+	color: #663333;
+}
+
+
+/*
+.menu .external, A.external {
+	background-color: #fff0ff;
+	cursor: pointer;
+	color: purple;
+	border: 1px dotted #ffd0ff;
+}
+*/
+
+.menu .missing, A.missing {
+	background-color: transparent;
+	cursor: pointer;
+	color: gray;
+}
+
+.menu .relatedsub, A.relatedsub {
+	font-weight: bold;
+}
+
+.menu .unrelatedsub, A.unrelatedsub {
+	font-weight: bold;
+}
+
+.menu .activesub, A.activesub {
+	background-color: #fff0f0;
+	cursor: pointer;
+	color: maroon;
+	border: 1px dotted #ffd0d0;
+	font-weight: bold;
+}
+
+.menu .sub, A.sub {
+	font-weight: bold;
+}
+
+PRE {
+	font-size: 90%;
+}
+
+/*BLOCKQUOTE {
+	margin: 1px;
+	padding: 1px;
+}*/
+
+TABLE {
+	empty-cells: show;
+}
+
+INPUT.form, TEXTAREA.form, SELECT.form {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 9pt;
+	background-color: #f0f0f0;
+	color: navy;
+	border: 1px solid black;
+}
+
+@font-face { font-family: Treb; 
+	     src: local("Trebuchet MS"), url("http://dag.wieers.com/fonts/trebuc.ttf") format("truetype");}
+@font-face { font-family: Arial; 
+	     src: local("Luxi Sans"), local("Arial"), local("Helvetica");}
+@font-face { font-family: Taho; 
+	     src: local("Tahoma"), url("http://dag.wieers.com/fonts/Tahomabd.ttf") format("truetype");}
+
+div.head {
+    position: fixed;
+	float: left;
+	clear: both;
+/*	margin-left: 1em; */
+/*	border-bottom: black 2px solid; */
+	border-collapse: collapse;
+	width: 180px;
+/*	background-color: white; */
+/*
+	font-family: Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+    font-size: 10px;
+    border-bottom: black 2px solid;
+    margin: 0;
+    padding: 0;
+    top: 0;
+*/
+}
+
+div.content {
+	font-weight: normal;
+	text-align: justify;
+	padding: 0;
+	margin: 0;
+	margin-left: 187px;
+	margin-right: 5px;
+/*	font-family: Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+	font-size: 10px;
+	margin-right: 6pt;
+	margin-top: 4em;
+	margin: 4ex 4em:
+	padding-left: 0.5em;
+	padding-right: 0.5em; */
+}
+
+BODY {
+	background-color: #ffffff;
+/*	background-attachment: fixed;
+	background-position: top left;
+	background-repeat: no-repeat; */
+	color: #000000;
+/*	font-family: Luxi Sans, Tahoma, Arial, Helvetica, sans-serif; */
+	font-family: sans-serif;
+	font-size: 10pt;
+	padding: 0px;
+	margin: 2px;
+}
+
+.dag-logo A {
+	color: black;
+	font-family: Verdana, Impact, Arial, Helvetica, sans-serif;
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.pagetitle {
+	background-color: transparent;
+	color: navy;
+/*	font-family: Harquil, Harbinger, Desdemona, Verdana, Impact, Arial, Helvetica, sans-serif; */
+	font-family: Harquil, Harbinger, Verdana, Impact, Arial, Helvetica, sans-serif; 
+	font-variant: small-caps;
+	font-size: 140%;
+	padding-bottom: 8pt;
+	text-align: center;
+}
+
+H1.section {
+	font-family: Tahoma, Arial Black, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+
+H2.title {
+	color: #ffffff;
+	font-size :0;
+}
+
+div.title, H2.section {
+	background-color: transparent;
+	color: maroon;
+	font-family: Verdana, Impact, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-top: 8pt;
+	padding-bottom: 0px; 
+	text-align: left; 
+	border: 0px solid #fff;
+	border-bottom: 1px solid #ccd;
+	padding-bottom:	0;
+	margin-bottom: 1;
+/*	border-color: #fff;
+	border-width: 0px; */
+/*	border:	1px solid #cccccc;
+	border-top:	0px;
+	padding-bottom:	2;
+	padding-top: 0;
+	padding-right: 6;
+	padding-left: 250;
+	margin-left: -250;
+	margin-top:	3em;
+	background: #ffffdd;
+	margin-right: 10; */
+}
+
+H3.section {
+	font-size: 10pt;
+}
+
+.quote {
+	font-family: Treb, Trebuchet MS, Verdana, Impact, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-variant: small-caps;
+/*	font-style: italic; */
+	font-weight: bold;
+	font-color: black;
+	text-align: center;
+	padding: 3px; 
+	margin: 0px;
+	border: 1px dashed gray;
+}
+
+.pre {
+	white-space: pre ;
+}
+
+div.intro, div.abstract, #intro {
+	background-color: #f0f0ff;
+	color: inherit;
+	text-align: justify;
+	border: 1px solid #99c;
+	border-left: 6px solid #99c;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+div.warning {
+	background-color: #fff0f0;
+	color: inherit;
+	text-align: justify;
+	border: 2px dotted #c99;
+	border-left: 6px solid #c99;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.text {
+	background-color: transparent;
+	color: black;
+	font-family: sans-serif;
+/*	font-size: 12pt;
+	margin-top: 1px; 
+	margin-left: 4px; */
+	text-align: justify;
+}
+
+span.structure {
+	font-family: sans-serif;
+	font-size: 8pt; 
+	white-space: nowrap;
+	text-align: left;
+}
+
+div.updated {
+	font-family: sans-serif;
+	font-size: 8pt; 
+	white-space: nowrap;
+	text-align: right;
+}
+
+div.copyright {
+	font-family: sans-serif;
+	font-size: 8pt;
+	white-space: nowrap;
+	text-align: right;
+}
+
+#lastupdated {
+	font-size: 7pt;
+	font-weight: bold;
+}
+
+#headlines {
+	text-align: left;
+}
+
+.link {
+	background-color: transparent;
+	color: #666699;
+}
+
+TD.line-top {
+	border-left: 1px solid silver;
+	border-top: 1px solid silver;
+	border-bottom: 1px dashed silver;
+	border-right: 1px solid silver;
+/*	border-right: 1px solid gray;*/
+}
+
+TD.line-middle {
+	border-left: 1px solid silver;
+	border-bottom: 1px dashed silver;
+	border-right: 1px solid silver;
+/*	border-right: 1px solid gray;*/
+}
+
+TD.line-bottom {
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+/*	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;*/
+}
+
+.button {
+	background-color: #c0c0ff;
+	color: #000060;
+	padding-top: 0px; 
+	padding-bottom: 0px; 
+}
+
+table.songTable {
+	background-color: #a0a0c0;
+	border: 1px solid #8080ff;
+	font-size: 7pt;
+}
+
+/*TD.songTemplateLabel {
+	border: 1px solid black;
+}
+
+TD.songTemplateInfo {
+	border: 1px solid black;
+}*/
+

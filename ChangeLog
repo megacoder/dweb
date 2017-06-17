@@ -1,0 +1,12 @@
+* 20030927
+- mod_prepend: changed _loadModule() and searchModule() to _mod_load() and _mod_search()
+- mod_prepend: added _cfg_default to simplify default configuration
+- mod_prepend: _mod_*() now only needs module name without extension
+- mod_photo: added $cfg[photo_command] to use external cmd (eg. convert)
+- mod_photo: improved mod_photo algorithm
+- mod_sitemap: improved mod_sitemap algorithm
+- mod_sitemap: fixed a UL-type problem
+- mod_dirindex: initial release
+- all: get rid of $ENV, now use $_SERVER
+- mod_prepend: cleaned up a lof of old cruft
+- mod_prepend: _*Descr() and _*Title() renamed to _desc_*() and _title_*()

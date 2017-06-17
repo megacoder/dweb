@@ -1,0 +1,227 @@
+A {
+	text-decoration: none;
+/*	padding-left: 0;*/
+}
+
+A:link, A:visited {
+	background-color: #f8f8ff;
+/*	background-color: transparent; */
+	color: #666699;
+}
+
+A:hover {
+	background-color: #f0f0ff;
+	color: #333366;
+	text-decoration: underline;
+}
+
+/* MENU */
+.menu {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 10pt;
+	white-space: nowrap;
+}
+
+.menu .active, A.active, A:active {
+	background-color: #fff0f0;
+	color: maroon;
+/*	text-decoration: underline; */
+}
+
+.menu .missing, A.missing {
+	background-color: transparent;
+	color: silver;
+}
+
+.menu .relatedsub, A.relatedsub {
+	font-weight: bold;
+}
+
+.menu .activesub, A.activesub {
+	background-color: #fff0f0;
+	color: maroon;
+/*	text-decoration: underline; */
+	font-weight: bold;
+}
+
+.menu .sub, A.sub {
+	font-weight: bold;
+}
+
+PRE {
+	font-size: 10pt;
+}
+
+TABLE {
+	empty-cells: show;
+}
+
+INPUT, TEXTAREA, SELECT {
+	font-family: Georgia,sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+	background-color: #f0f0f0;
+	color: navy;
+}
+
+@font-face { font-family: Treb; 
+	     src: local("Trebuchet MS"), url("http://dag.wieers.com/fonts/trebuc.ttf") format("truetype");}
+@font-face { font-family: Arial; 
+	     src: local("Luxi"), local("Arial"), local("Helvetica");}
+@font-face { font-family: Taho; 
+	     src: local("Tahoma"), url("http://dag.wieers.com/fonts/Tahomabd.ttf") format("truetype");}
+
+div.head {
+    position: fixed;
+    float: left;
+    clear: both;
+/*  margin-left: 1em; */
+/*  border-bottom: black 2px solid; */
+    border-collapse: collapse;
+    width: 180px;
+    background-color: white;
+/*  
+    font-family: Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+    font-size: 10px;
+    border-bottom: black 2px solid;
+    margin: 0;
+    padding: 0;
+    top: 0;
+*/
+}
+
+div.content {
+    font-weight: normal;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    margin-left: 190px;
+/*  font-family: Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+    font-size: 10px;
+    margin-right: 6pt;
+    margin-top: 4em;
+    margin: 4ex 4em:
+    padding-left: 0.5em;
+    padding-right: 0.5em; */
+
+BODY {
+	background-color: #ffffff;
+/*	background-attachment: fixed;
+	background-position: top left;
+	background-repeat: no-repeat; */
+	color: #000000;
+	font-family: Luxi, Arial, Helvetica, sans-serif;
+}
+
+#dag-logo {
+	background-color: transparent;
+	color: navy;
+	font-family: Desdemona, Verdana, Impact, Arial, Helvetica, sans-serif;
+	font-size: 22pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.pagetitle {
+	background-color: transparent;
+	color: navy;
+	font-family: Desdemona, Verdana, Impact, Arial, Helvetica, sans-serif;
+	font-size: 18pt;
+	padding-bottom: 12pt;
+	text-align: center;
+}
+
+#pagesubtitle {
+	background-color: transparent;
+	color: black;
+	font-family: Luxi, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	margin-top: 0px;
+	text-align: center;
+}
+
+H1.section {
+	font-size: 14pt;
+}
+
+div.title, H2.section {
+	background-color: transparent;
+	color: maroon;
+	font-family: Desdemona,Verdana,Impact,Arial,Helvetica, sans-serif;
+/*	font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif; */
+	font-weight: bold;
+	font-size: 12pt;
+	text-align: left; 
+}
+
+H3.section {
+	font-size: 10pt;
+}
+
+.quote {
+	font-family: Verdana,Trebuchet,Impact,Arial,Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+.intro {
+	font-size: 12pt;
+	font-weight: bold;
+/*	text-align: justify; */
+/*	padding-bottom: 15pt;*/
+}
+
+.text {
+	background-color: transparent;
+	color: black;
+	font-family: Luxi, Arial, Helvetica, sans-serif;
+/*	font-size: 12pt;
+	margin-top: 1px; 
+	margin-left: 4px; */
+/*	text-align: justify; */
+}
+
+span.structure {
+	font-family: Luxi, Helvetica, Arial, sans-serif;
+	font-size: 10pt; 
+	white-space: nowrap;
+}
+
+div.updated {
+	font-family: Luxi, Helvetica, Arial, sans-serif;
+	font-size: 8pt; 
+	white-space: nowrap;
+	text-align: right;
+}
+
+div.copyright {
+	font-family: Luxi, Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	white-space: nowrap;
+	text-align: right;
+}
+
+#lastupdated {
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+#headlines {
+	text-align: left;
+}
+
+.link {
+	background-color: transparent;
+	color: #666699;
+}
+
+TD.line {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+TD.line-right {
+	border-right: 1px solid black;
+}

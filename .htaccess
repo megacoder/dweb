@@ -1,0 +1,73 @@
+#Options None
+#AllowOverride All
+Options +Indexes +FollowSymlinks
+
+php_value include_path .:/web/users/dag.wieers.com/dweb:
+php_value auto_prepend_file mod_prepend.inc.php
+php_value auto_append_file mod_append.inc.php
+php_flag safe_mode Off
+php_flag register_globals Off
+
+ErrorDocument 401 /error.php?error=401
+ErrorDocument 403 /error.php?error=403
+ErrorDocument 404 /error.php?error=404
+ErrorDocument 500 /error.php?error=500
+
+<FilesMatch "^/dweb/">
+	order deny,allow
+	deny from all
+</FilesMatch>
+
+<FilesMatch "\.inc.php$">
+	order deny,allow
+	deny from all
+</FilesMatch>
+
+#<Directory "/usage-2002">
+#	Options FollowSymLinks
+#</Directory>
+
+## Permanently move old pages... (website have links)
+RedirectMatch permanent (.*)\.php3$ http://dag.wieers.com$1.php
+
+RedirectMatch permanent ^/about/sitemap.php$ http://dag.wieers.com/sitemap.php
+RedirectMatch permanent ^/about/$ http://dag.wieers.com/disclaimer.php
+RedirectMatch permanent ^/playlist/$ http://dag.wieers.com/personal/playlist.php
+RedirectMatch permanent ^/usage/$ http://dag.wieers.com/usage/2003/
+
+#RedirectMatch permanent ^/apt/(.*)\.rpm$ http://apt.sw.be/$1.rpm
+RedirectMatch temp ^/apt/$ http://dag.wieers.com/home-made/apt/
+#RedirectMatch permanent ^/packages/(.*)\.rpm$ http://apt.sw.be/packages/$1.rpm
+
+Redirect permanent /remote/images/questionM.gif http://dag.wieers.com/images/blank.gif
+
+Redirect permanent /apah http://colony.be/apah
+Redirect permanent /bookmarks.php http://dag.wieers.com/bookmarks/
+Redirect permanent /cv/curriculum-vitae.html http://dag.wieers.com/cv/
+Redirect permanent /dag-style.css http://dag.wieers.com/style.css
+Redirect permanent /dag http://dag.wieers.com/personal
+Redirect permanent /dagmenu/dag http://dag.wieers.com/personal
+Redirect permanent /dagmenu/home/search.html  http://dag.wieers.com/websearch/
+Redirect permanent /dagmenu/kadril http://dag.wieers.com/kadril
+Redirect permanent /dagmenu/zone http://dag.wieers.com/dagmenu/projects/zone
+Redirect permanent /hal2001 http://colony.be/hal2001
+Redirect permanent /home-made/rpm-packages.php http://dag.wieers.com/home-made/apt/
+Redirect permanent /pah http://colony.be/pah
+Redirect permanent /pub/home-made ftp://dag.wieers.com/home-made
+Redirect permanent /personal/bookmarks.php http://dag.wieers.com/bookmarks/
+Redirect permanent /personal/dag.php http://dag.wieers.com/personal/
+Redirect permanent /personal/essays.php http://dag.wieers.com/personal/literature.php
+Redirect permanent /personal/lyrics.php http://dag.wieers.com/personal/music.php
+Redirect permanent /personal/todo.php http://dag.wieers.com/todo.php
+Redirect permanent /personal/websites.php http://dag.wieers.com/websites/
+Redirect permanent /photos/spanje-2001 http://dag.wieers.com/photos/begur-2001
+Redirect permanent /photos/spain-2001 http://dag.wieers.com/photos/begur-2001
+Redirect permanent /summer99 http://colony.be/summer99
+Redirect permanent /usage-1998 http://dag.wieers.com/usage/1998
+Redirect permanent /usage-1999 http://dag.wieers.com/usage/1999
+Redirect permanent /usage-2000 http://dag.wieers.com/usage/2000
+Redirect permanent /usage-2001 http://dag.wieers.com/usage/2001
+Redirect permanent /usage-2002 http://dag.wieers.com/usage/2002
+Redirect permanent /usage-old http://dag.wieers.com/usage/2001
+Redirect permanent /usage-older http://dag.wieers.com/usage/2000
+Redirect permanent /websites.php http://dag.wieers.com/websites/

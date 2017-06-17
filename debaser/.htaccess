@@ -1,0 +1,12 @@
+#php_value include_path .:/web/users/dag.wieers.com/debaser/:
+#php_value auto_prepend_file mod_prepend.inc.php
+#php_flag safe_mode Off
+
+Redirect permanent /debaser/main.html http://dag.wieers.com/debaser/
+Redirect permanent /debaser/main.php http://dag.wieers.com/debaser/
+
+## Permanently move old pages... (website have links)
+RedirectMatch permanent /debaser(.*)\.html$ http://dag.wieers.com/debaser$1.php
+RedirectMatch permanent /debaser/lyrics(.*)\.txt$ http://dag.wieers.com/debaser/lyrics$1.php
+
+Redirect permanent /debaser/netstuff.php http://dag.wieers.com/debaser/links.php

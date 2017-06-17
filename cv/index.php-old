@@ -1,0 +1,14 @@
+<?//_head("Curriculum Vitae")?>
+<div id="intro">
+YES, I'm always available in two formats:
+</div>
+<p>
+
+<?_lastUpdated("curriculum-vitae.pdf")?><p>
+<ul>
+<li> <acronym title="Hypertext Markup Language"><?_link("curriculum-vitae.html","HTML")?></acronym>
+<li> <acronym title="Portable Document Format"><?_link("curriculum-vitae.pdf","PDF")?></acronym> (Printable version)
+</ul><p>
+It goes without saying that if you have any questions, you can
+<?_link("/contact.php?to=dag@wieers.com&subject=I%20question%20you","contact me")?>.
+<?//_foot()?>

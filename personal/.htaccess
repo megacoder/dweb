@@ -1,0 +1,2 @@
+Redirect permanent /personal/music.php http://dag.wieers.com/personal/cd-list.php
+Redirect permanent /personal/jukebox.php http://dag.wieers.com/personal/jukebox/

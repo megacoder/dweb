@@ -1,0 +1,5 @@
+#ErrorDocument 403 /photos/photo.php
+#ErrorDocument 404 /photos/photo.php
+Options +Indexes
+DirectoryIndex index.php /photo.php
+DefaultType application/x-httpd-php

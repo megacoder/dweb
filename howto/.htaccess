@@ -1,0 +1,30 @@
+Redirect permanent /howto/linux-bits http://dag.wieers.com/howto/bits
+Redirect permanent /howto/bits/rh-smallmachines.php http://dag.wieers.com/howto/bits/rh-oldmachines/
+
+## These are temporary. (searchengines have links)
+Redirect permanent /howto/tp-770 http://dag.wieers.com/howto/thinkpad/770
+Redirect permanent /howto/thinkpad-770 http://dag.wieers.com/howto/thinkpad/770
+Redirect permanent /howto/tp-a20m http://dag.wieers.com/howto/thinkpad/a20m
+Redirect permanent /howto/thinkpad-a20m http://dag.wieers.com/howto/thinkpad/a20m
+Redirect permanent /howto/tp-x20 http://dag.wieers.com/howto/thinkpad/x20
+Redirect permanent /howto/thinkpad-x20 http://dag.wieers.com/howto/thinkpad/x20
+
+Redirect permanent /howto/Belgian-HOWTO.txt http://dag.wieers.com/howto/Belgian-HOWTO/
+Redirect permanent /howto/Belgian-HOWTO.html http://dag.wieers.com/howto/Belgian-HOWTO/
+Redirect permanent /howto/Belgian-HOWTO-NL.txt http://dag.wieers.com/howto/Belgian-HOWTO-NL/
+Redirect permanent /howto/Belgian-HOWTO-NL.html http://dag.wieers.com/howto/Belgian-HOWTO-NL/
+Redirect permanent /howto/Belgian-HOWTO-NL-1.html http://dag.wieers.com/howto/Belgian-HOWTO-NL/intro.html
+Redirect permanent /howto/Belgian-HOWTO-NL-2.html http://dag.wieers.com/howto/Belgian-HOWTO-NL/configuration.html
+Redirect permanent /howto/Belgian-HOWTO-NL-3.html http://dag.wieers.com/howto/Belgian-HOWTO-NL/isp.html
+Redirect permanent /howto/Belgian-HOWTO-NL-4.html http://dag.wieers.com/howto/Belgian-HOWTO-NL/lugs.html
+Redirect permanent /howto/Belgian-HOWTO-NL-5.html http://dag.wieers.com/howto/Belgian-HOWTO-NL/business.html
+Redirect permanent /howto/Belgian-HOWTO-NL-6.html http://dag.wieers.com/howto/Belgian-HOWTO-NL/links.html
+
+RedirectMatch permanent /howto/([A-Z][^/0-9]*)\.html$ http://dag.wieers.com/howto/$1/$1.html
+RedirectMatch permanent /howto/([A-Z][^/]*)(-[0-9])\.html$ http://dag.wieers.com/howto/$1/$1$2.html
+RedirectMatch permanent /howto/([A-Z][^/]*)\.ps$ http://dag.wieers.com/howto/$1/$1.ps
+RedirectMatch permanent /howto/([A-Z][^/]*)\.txt$ http://dag.wieers.com/howto/$1/$1.txt
+RedirectMatch permanent /howto/([A-Z][^/]*)\.pdf$ http://dag.wieers.com/howto/$1/$1.pdf
+RedirectMatch permanent /howto/([A-Z][^/]*)\.rtf$ http://dag.wieers.com/howto/$1/$1.rtf
+RedirectMatch permanent /howto/([A-Z][^/]*)\.tex$ http://dag.wieers.com/howto/$1/$1.tex
+RedirectMatch permanent /howto/([A-Z][^/]*)\.sgml$ http://dag.wieers.com/howto/$1/$1.sgml
